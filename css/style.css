@@ -1,0 +1,199 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0px;
+    font-family: serif;
+    color: white;
+    scroll-behavior: smooth;
+    font-family: math;
+}
+html,body{
+    height:100%;
+    width:100%;
+    margin:0px;
+    padding:0;
+    overflow-x:hidden;
+}  
+:root{
+    --main: #DC5F00;
+}
+.container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}  
+header{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav{
+    margin-right: 120px;
+    margin-bottom: 16px;
+}
+ul{
+    list-style: none;
+}
+li{
+    display: inline;
+    margin-inline: 35px;
+    
+}
+a{
+    text-decoration: none;
+    color: var(--main);
+    font-size: 17px;
+    font-weight: 600;
+    padding-bottom: 5px;
+}
+a:hover{
+    color: #2A629A;
+    border-bottom: 1px solid #2A629A;
+}
+.fa-bars {
+    display: none;
+}
+.name{
+    color: var(--main);
+    display: flex;
+    align-items: center;
+    font-size: 26px;
+    font-weight: 600;
+    margin-left: 80px;
+}
+.fa-pizza-slice{
+    color: var(--main);
+    margin-left: 5px;
+}
+main{
+    width: 100%;
+    height: 90%;
+    position: relative;
+}
+main img{
+    width: 550px;
+    height: 550px;
+    position: absolute;
+    right: 120px;
+    bottom: 70px;
+    animation-name: an;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+}
+@keyframes an{
+    0%{translate: -100px;}
+}
+main section{
+    position: absolute;
+    top: 26%;
+    left: 220px;
+    letter-spacing: 0.8px;
+    animation-name: ani;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+}
+@keyframes ani{
+    0%{translate: 100px;}
+}
+h1{
+    font-size: 48px;
+    margin: 10px;
+    color: var(--main);
+}
+p{
+    color: rgba(95, 95, 95, 0.877);
+    margin: 10px;
+}
+main input{
+    margin: 10px ;
+    height: 45px;
+    width: 110px;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--main);
+    color: rgb(255, 255, 255);
+    font-size: 13px;
+    font-weight: bold;
+    margin-top: 20px;
+    transition: 0.6s;
+}
+main input:hover{
+    transform: scale(1.1);
+    background-color: #2A629A;
+}
+@media(max-width:518px){
+    .name{
+        margin-left: 30px;
+        font-size: 22px;
+    }
+    nav{
+        margin-right: 0px;
+    }
+    ul{
+        display: none;
+    }
+    .fa-bars{
+        display: block;
+        color: var(--main);
+        margin-right: 20px;
+        font-size: 20px;
+        margin-top: 19px;
+    }
+    .fa-bars:hover{
+        translate: 76px 85px;
+    }
+    .fa-bars:hover ul{
+        display: block;
+        translate: -70px 20px;
+        margin: 0px;
+        background-color: var(--main);
+        padding: 10px;
+        border-radius: 5px;
+        animation-name: anim;
+        animation-duration: 3s;
+        opacity: 0;
+    }
+    @keyframes anim {
+        0%{
+            opacity: 0px;
+        }
+        100%{
+            opacity: 1;
+        }
+    }
+    .fa-bars:hover li,
+    .fa-bars:hover a{
+        margin: 0px;
+        display: block;
+        color: white;
+        padding: 5px;
+    }
+    .fa-bars:hover a{
+        border-bottom: 1px solid white;
+        font-weight: 100;
+    }
+    main img{
+        height: 250px ;
+        width: 250px;
+        right: 10px;
+        bottom: 20px;
+    }
+    @keyframes ani{
+        0%{translate: 50px;}
+    }
+    @keyframes an {
+        
+        0%{
+           translate: -50px;
+          }
+    }
+    main section{
+        top: 10%;
+        left: 10px;
+    }
+}
