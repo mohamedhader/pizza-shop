@@ -249,10 +249,10 @@ h2::before{
         font-size: 45px;
     }
     h2::after{
-        translate: 300px 0px;
+        translate: 250px 0px;
     }
     h2::before{
-        translate: -300px 0px;
+        translate: -200px 0px;
         width: 100%;
     }
 }
