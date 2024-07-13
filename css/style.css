@@ -14,7 +14,7 @@ html,body{
     overflow-x:hidden;
 }  
 :root{
-    --main: #DC5F00;
+    --main: #e2670a;
 }
 .container{
     height: 100%;
@@ -87,7 +87,7 @@ main img{
     bottom: 60px;
     animation-name: an;
     animation-duration: 2s;
-    animation-timing-function: linear;
+    animation-timing-function: ease-in-out;
 }
 @keyframes an{
     0%{translate: -100px;}
@@ -99,7 +99,7 @@ main section{
     letter-spacing: 0.8px;
     animation-name: ani;
     animation-duration: 2s;
-    animation-timing-function: linear;
+    animation-timing-function: ease-in-out;
 }
 @keyframes ani{
     0%{translate: 100px;}
@@ -183,10 +183,10 @@ main input:hover{
         font-weight: 100;
     }
     main img{
-        height: 250px ;
-        width: 250px;
+        height: 270px ;
+        width: 270px;
         right: 10px;
-        bottom: 20px;
+        bottom: 30px;
     }
     @keyframes ani{
         0%{translate: 50px;}
@@ -198,8 +198,17 @@ main input:hover{
           }
     }
     main section{
-        top: 10%;
-        left: 10px;
+        top: 14%;
+        left: 20px;
+    }
+    main section p{
+        position: absolute;
+        top: 109%;
+        width: 100%;
+    }
+    main section input{
+        position: absolute;
+        top: 165%;
     }
 }
 .menu{
@@ -334,6 +343,9 @@ h2::before{
     background-color: rgb(240, 240, 240);
 }
 @media(max-width:518px){
+    .menu{
+        height: 200%;
+    }
     .box{
         height: 160px;
         width: 275px;
