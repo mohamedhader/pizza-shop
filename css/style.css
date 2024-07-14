@@ -247,7 +247,7 @@ h2::before{
         font-size: 45px;
     }
     h2::after{
-        translate: 200px 0px;
+        translate: 220px 0px;
     }
     h2::before{
         translate: -220px 0px;
