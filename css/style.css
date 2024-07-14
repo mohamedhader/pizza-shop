@@ -60,7 +60,7 @@ a:hover{
     border-bottom: 1px solid #2A629A;
 }
 .fa-bars {
-    display: none;
+    display: none ;
 }
 .name{
     color: var(--main);
@@ -142,30 +142,28 @@ main input:hover{
         display: none;
     }
     .fa-bars{
-        display: block;
+        display: inline-block ;
         color: var(--main);
-        margin-right: 20px;
+        position: fixed;
+        translate: -40px 0px;
         font-size: 20px;
-        margin-top: 19px;
-    }
-    .fa-bars:hover{
-        translate: 66px 85px;
     }
     .fa-bars:hover ul{
         display: block;
-        translate: -70px 20px;
+        translate: -90px 20px;
         margin: 0px;
         background-color: var(--main);
         padding: 10px;
         border-radius: 5px;
         animation-name: anim;
-        animation-duration: 3s;
+        animation-duration: 2s;
         animation-fill-mode: forwards;
-        opacity: 0;
+        opacity: 1;
+        text-align: center;
     }
     @keyframes anim {
         0%{
-            opacity: 0px;
+          transform: translateX(100px);
         }
         100%{
             opacity: 1;
@@ -249,10 +247,10 @@ h2::before{
         font-size: 45px;
     }
     h2::after{
-        translate: 250px 0px;
+        translate: 200px 0px;
     }
     h2::before{
-        translate: -200px 0px;
+        translate: -220px 0px;
         width: 100%;
     }
 }
