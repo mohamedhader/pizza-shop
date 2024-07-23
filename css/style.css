@@ -340,7 +340,7 @@ h2::before{
 .add:hover{
     background-color: rgb(240, 240, 240);
 }
-@media(max-width:818px){
+@media(max-width:518px){
     .menu{
         height: 200%;
     }
@@ -439,7 +439,7 @@ button{
     position: absolute;
     right: 5%;
 }
-@media(max-width:818px){
+@media(max-width:518px){
     .contact{
         height: 100%;
     }
@@ -447,6 +447,6 @@ button{
         display: none;
     }
     .contact form {
-        left: 46px;
+        left: 36px;
     }
 }
