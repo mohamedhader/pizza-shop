@@ -104,6 +104,13 @@ main section{
 @keyframes ani{
     0%{translate: 100px;}
 }
+section .a{
+    text-decoration: none;
+}
+.a:hover{
+    text-decoration: none;
+    border: none;
+}
 h1{
     font-size: 48px;
     margin: 10px;
@@ -222,9 +229,10 @@ h2{
     color: var(--main);
     font-size: 55px;
     position: absolute;
-    top: 30px;
+    top: 20px;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 h2::after{
     content: "";
@@ -232,7 +240,7 @@ h2::after{
     height: 3px;
     background-color: var(--main);
     position: absolute;
-    translate: 238px 0px;
+    translate: 490px 0px;
 }
 h2::before{
     content: "";
@@ -240,25 +248,24 @@ h2::before{
     height: 3px;
     background-color: var(--main);
     position: absolute;
-    translate: -736px 0px;
+    translate: -490px 0px;
 }
 @media(max-width:518px){
     h2{
         font-size: 45px;
     }
     h2::after{
-        translate: 200px 0px;
+        translate: 400px 0px;
     }
     h2::before{
-        translate: -220px 0px;
-        width: 100%;
+        translate: -400px 0px;
     }
 }
 .flex{
     height: 80%;
     width: 100%;
     position: absolute;
-    bottom: 0;
+    bottom: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -381,7 +388,38 @@ h2::before{
     font-size: 44px;
     font-weight: 600;
     align-self: start;
-    margin-top: 30px;
+    margin-block: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+}
+.get::after{
+    content: "";
+    width: 300%;
+    height: 3px;
+    background-color: var(--main);
+    position: absolute;
+    translate: 490px 0px;
+}
+.get::before{
+    content: "";
+    width: 300%;
+    height: 3px;
+    background-color: var(--main);
+    position: absolute;
+    translate: -490px 0px;
+}
+@media(max-width:518px){
+    .get{
+        font-size: 45px;
+    }
+    .get::after{
+        translate: 500px 0px;
+    }
+    .get::before{
+        translate: -500px 0px;
+    }
 }
 form{
     height: 450px;
@@ -439,14 +477,14 @@ button{
     position: absolute;
     right: 5%;
 }
-@media(max-width:518px){
+@media(max-width:818px){
     .contact{
-        height: 100%;
+        height: 110%;
     }
     .contact img{
         display: none;
     }
     .contact form {
-        left: 34px ;
+        left: 33px;
     }
 }
