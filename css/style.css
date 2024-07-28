@@ -415,10 +415,10 @@ h2::before{
         font-size: 45px;
     }
     .get::after{
-        translate: 600px 0px;
+        translate: 550px 0px;
     }
     .get::before{
-        translate: -600px 0px;
+        translate: -550px 0px;
     }
 }
 form{
