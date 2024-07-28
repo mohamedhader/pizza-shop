@@ -255,10 +255,10 @@ h2::before{
         font-size: 45px;
     }
     h2::after{
-        translate: 400px 0px;
+        translate: 520px 0px;
     }
     h2::before{
-        translate: -400px 0px;
+        translate: -520px 0px;
     }
 }
 .flex{
@@ -415,10 +415,10 @@ h2::before{
         font-size: 45px;
     }
     .get::after{
-        translate: 550px 0px;
+        translate: 570px 0px;
     }
     .get::before{
-        translate: -550px 0px;
+        translate: -570px 0px;
     }
 }
 form{
